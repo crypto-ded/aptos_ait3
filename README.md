@@ -25,26 +25,30 @@ echo "export WORKSPACE=testnet" >> $HOME/.bash_profile
 echo "export PUBLIC_IP=$(curl -s ifconfig.me)" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
+### 2. Install dependencies
+```
+apt install unzip
+```
 
-### 2. Update packages
+### 3. Update packages
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential pkg-config openssl libssl-dev libclang-dev -y
 ```
 
-### 3. Install docker
+### 4. Install docker
 ```
 . <(wget -qO- https://raw.githubusercontent.com/letsnode/Utils/main/installers/docker.sh)
 ```
 
-### 4. Install docker compose
+### 5. Install docker compose
 ```
 docker_compose_version=$(wget -qO- https://api.github.com/repos/docker/compose/releases/latest | jq -r ".tag_name")
 sudo wget -O /usr/bin/docker-compose "https://github.com/docker/compose/releases/download/${docker_compose_version}/docker-compose-`uname -s`-`uname -m`"
 sudo chmod +x /usr/bin/docker-compose
 ```
 
-### 5. Download Aptos CLI
+### 6. Download Aptos CLI
 ```
 wget -qO aptos-cli.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v0.3.1/aptos-cli-0.3.1-Ubuntu-x86_64.zip
 sudo unzip -o aptos-cli.zip -d /usr/local/bin
@@ -52,7 +56,7 @@ chmod +x /usr/local/bin/aptos
 rm aptos-cli.zip
 ```
 
-### 6. Install Validator node
+### 7. Install Validator node
 
 ### Create directory
 ```
