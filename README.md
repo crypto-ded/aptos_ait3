@@ -1,7 +1,7 @@
 # Aptos AIT3 Guide
 
 ### Steps in AIT3 [here](https://aptos.dev/nodes/ait/steps-in-ait3)
-### Fullnode guide [here](https://github.com/mmyevyn/aptos-ait3/blob/main/FULLNODE-SETUP.md)
+### Fullnode guide [https://github.com/mmyevyn/aptos_ait3/blob/main/fullnode_setup.md)
 
 ## Deploy the validator node
 ### Hardware requirements:
