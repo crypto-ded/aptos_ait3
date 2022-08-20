@@ -1,5 +1,8 @@
 # Aptos AIT3 Guide
 
+
+Fullnode guide [here](https://github.com/mmyevyn/aptos-ait3/blob/main/FULLNODE-SETUP.md)
+
 ## Deploy the validator node
 ### Hardware requirements:
 For running an Aptos node on incentivized testnet i recommend the following:
