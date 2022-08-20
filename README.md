@@ -9,7 +9,7 @@ For running an Aptos node on incentivized testnet we recommend the following:
 # Set up your aptos validator
 Follow the steps below
 
-# 1. Setting up vars
+## 1. Setting up vars
 Put your node name here
 ```
 NODENAME=<your_nodename>
@@ -23,17 +23,17 @@ echo "export PUBLIC_IP=$(curl -s ifconfig.me)" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 
-# 2. Update packages
+## 2. Update packages
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
-# 3. Install dependencies
+## 3. Install dependencies
 ```
 sudo apt-get install jq unzip -y
 ```
 
-# 4. Install docker
+## 4. Install docker
 ```
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -42,14 +42,14 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 ```
 
-# 5. Install docker compose
+## 5. Install docker compose
 ```
 docker_compose_version=$(wget -qO- https://api.github.com/repos/docker/compose/releases/latest | jq -r ".tag_name")
 sudo wget -O /usr/bin/docker-compose "https://github.com/docker/compose/releases/download/${docker_compose_version}/docker-compose-`uname -s`-`uname -m`"
 sudo chmod +x /usr/bin/docker-compose
 ```
 
-# 6. Download Aptos CLI
+## 6. Download Aptos CLI
 ```
 wget -qO aptos-cli.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v0.3.1/aptos-cli-0.3.1-Ubuntu-x86_64.zip
 sudo unzip -o aptos-cli.zip -d /usr/local/bin
@@ -57,7 +57,7 @@ chmod +x /usr/local/bin/aptos
 rm aptos-cli.zip
 ```
 
-# 7. Install Validator node
+## 7. Install Validator node
 
 ### Create directory
 ```
