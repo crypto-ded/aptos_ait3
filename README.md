@@ -1,35 +1,7 @@
-# Aptos AIT3 Registration
-To participate in the AIT-3 program, follow the below steps. Use these steps as a checklist to keep track of your progress. Click on the links in each step for a detailed documentation.
-# Sign-in, connect Wallet and complete survey
-1. Navigate to the Aptos Community page and follow the steps, starting with registering or signing in to your Discord account.
+# Aptos AIT3 Guide
 
-2. Before you click on Step 2 CONNECT WALLET:
-
-- Delete any previous versions of Aptos Wallet you have installed on Chrome
-- Install the Petra (Aptos Wallet) extension using Step 3 instructions, and
-- Create the first wallet using Step 4 instructions.
-3. Install the Petra (Aptos Wallet) extension on your Chrome browser by following the instructions:
-- Download the latest Petra Wallet release and unzip.
-- Open a Chrome window and navigate to the Extensions using any of the below methods:
-  -  At the top right corner of the browser window, click the three vertical dots and then More tools and then Extensions, or
-  -  On a new tab or a window type chrome://extensions in the URL field and press return.
-- Enable Developer mode at the top right of the Extensions page.
-- Click on Load unpacked at the top left, and point it to the folder where you just unzipped the downloaded Wallet release.
-
-Now you will see Wallet in your Chrome extensions.
-
-4. Create the first wallet using Petra (Aptos Wallet). This first wallet will always be the owner wallet
-- Open the Aptos Wallet extension from the Extensions section of the Chrome browser, or by clicking on the puzzle piece on top right of the browser and selecting Aptos   Wallet.
-- Click Create a new wallet.
-- Make sure to store your seed phrase somewhere safe. This account will be used in the future.
-5. Navigate to AIT3 Registration Page and click on Step 2 'CONNECT WALLET' to register the owner wallet address to your Aptos Community account. The Aptos team will airdrop coins to this owner wallet address.
-
-6. Click on the Step 3 COMPLETE SURVEY to complete the survey.
-
-7. Next, proceed to install and deploy the validator node.
-
-# Deploy the validator node and register the node
-# Hardware requirements:
+# Deploy the validator node
+## Hardware requirements:
 For running an Aptos node on incentivized testnet we recommend the following:
 - CPU: 8 cores (Intel Xeon Skylake or newer)
 - Memory: 32GB RAM
