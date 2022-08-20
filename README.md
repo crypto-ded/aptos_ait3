@@ -1,3 +1,7 @@
+<p style="font-size:20px" align="left">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Telegram_X_2019_Logo.svg/1024px-Telegram_X_2019_Logo.svg.png" width="35"/></a>
+<a href="https://t.me/dedlutaet" target="_blank">Join to my telegram</a>
+
 # Aptos AIT3 Guide
 
 ### Steps in AIT3 [here](https://aptos.dev/nodes/ait/steps-in-ait3)
