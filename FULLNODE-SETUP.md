@@ -1,6 +1,6 @@
 # Deploy the fullnode
 Recommended to install fullnode on a separate server
-## For running an Aptos fullnode we recommend the following:
+## For running an fullnode i recommend the following:
 
 - CPU: 4 cores (Intel Xeon Skylake or newer)
 - Memory: 8GB RAM
