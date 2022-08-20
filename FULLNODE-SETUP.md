@@ -37,6 +37,7 @@ sudo chmod +x /usr/bin/docker-compose
 mkdir ~/testnet && cd ~/testnet
 ```
 
+
 ### Download config files
 ```
 wget -qO docker-compose.yaml https://raw.githubusercontent.com/aptos-labs/aptos-core/main/docker/compose/aptos-node/docker-compose-fullnode.yaml
@@ -50,7 +51,7 @@ nano fullnode.yaml
 ```
 
 Change `<Validator IP Address>` to your validator IP
-
+![image](https://user-images.githubusercontent.com/95987354/185751546-2dea9366-b901-4206-8f42-846a975fc653.png)
 Press `Ctrl + X` then press `Y` and `Enter` to save changes to file
 
 ### Copy the validator-full-node-identity.yaml, genesis.blob and waypoint.txt files from validator node into the same working directory on Fullnode machine
