@@ -39,9 +39,8 @@ sudo apt install build-essential pkg-config openssl libssl-dev libclang-dev -y
 
 ### 4. Install docker compose
 ```
-docker_compose_version=$(wget -qO- https://api.github.com/repos/docker/compose/releases/latest | jq -r ".tag_name")
-sudo wget -O /usr/bin/docker-compose "https://github.com/docker/compose/releases/download/${docker_compose_version}/docker-compose-`uname -s`-`uname -m`"
-sudo chmod +x /usr/bin/docker-compose
+wget https://raw.githubusercontent.com/aptos-labs/aptos-core/main/docker/compose/aptos-node/docker-compose.yaml
+wget https://raw.githubusercontent.com/aptos-labs/aptos-core/main/docker/compose/aptos-node/validator.yaml
 ```
 
 ### 5. Download Aptos CLI
