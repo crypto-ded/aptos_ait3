@@ -164,23 +164,13 @@ source $HOME/.bash_profile
 ```
 ### Check your node health
 - Navigate to https://node.aptos.zvalid.com/
-- Enter your node public IP address
-- You should see data like in example below:
 ### Register your validator node
-1.Come back to the Aptos Community page and register your node by clicking on Step 4: 'NODE REGISTRATION' button.
 
-2.Provide the details of your validator node on this node registration screen, all the public key information you need is in the '~/$WORKSPACE/keys/public-keys.yaml' file (please don't enter anything from private keys).
+All the public key information you need is in the '~/$WORKSPACE/keys/public-keys.yaml' file.
 ```
 cat ~/$WORKSPACE/keys/public-keys.yaml
 ```
-- OWNER KEY: the first wallet public key. From Settings -> Credentials
-- CONSENSUS KEY: consensus_public_key from public-keys.yaml
-- CONSENSUS POP: consensus_proof_of_possession from public-keys.yaml
-- ACCOUNT KEY: account_public_key from public-keys.yaml
-- VALIDATOR NETWORK KEY: validator_network_public_key from public-keys.yaml
-4. Next, click on VALIDATE NODE. If your node passes healthcheck, you will be prompted to complete the identity verification process.
-- The Aptos team will perform a node health check on your validator, using the Node Health Checker. When Aptos confirms that your node is healthy, you will be asked to complete the KYC process.
-5. Wait for the selection announcement. If you are selected, the Aptos team will airdrop coins into your owner wallet address. If you do not see airdropped coins in your owner wallet, you were not selected.
+
 # Useful commands
 ### Check validator node logs
 ```
