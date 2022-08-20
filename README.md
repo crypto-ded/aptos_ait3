@@ -1,7 +1,7 @@
 # Aptos AIT3 Guide
 
-# Deploy the validator node
-## Hardware requirements:
+## Deploy the validator node
+### Hardware requirements:
 For running an Aptos node on incentivized testnet we recommend the following:
 - CPU: 8 cores (Intel Xeon Skylake or newer)
 - Memory: 32GB RAM
