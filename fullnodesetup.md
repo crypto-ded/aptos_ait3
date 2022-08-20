@@ -1,4 +1,3 @@
-
 # Deploy the fullnode
 Recommended to install fullnode on a separate server
 ## For running an Aptos fullnode we recommend the following:
