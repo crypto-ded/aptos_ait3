@@ -143,7 +143,7 @@ All the public key information you need is in the '~/$WORKSPACE/keys/public-keys
 cat ~/$WORKSPACE/keys/public-keys.yaml
 ```
 
-## Other commands
+# Other commands
 ### Check validator node logs
 ```
 docker logs -f testnet-validator-1 --tail 50
