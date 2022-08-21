@@ -54,7 +54,7 @@ Change `<Validator IP Address>` to your validator IP
 ![image](https://user-images.githubusercontent.com/95987354/185751546-2dea9366-b901-4206-8f42-846a975fc653.png)
 Press `Ctrl + O` then press `Ctrl + X` and `Enter` to save changes to file
 
-#### Copy the `validator-full-node-identity.yaml`, `genesis.blob` and `waypoint.txt` files from validator node into the same working directory on Fullnode machine
+#### Copy the `keys`, `genesis.blob` and `waypoint.txt` files from validator node into the same working directory on Fullnode machine
 ![image](https://user-images.githubusercontent.com/95987354/185796510-c12f53fa-468a-4bc1-8900-2c2e5f90a513.png)
 
 
