@@ -149,11 +149,7 @@ aptos genesis generate-genesis --local-repository-dir ~/$WORKSPACE --output-dir 
 ```
 docker compose up
 ```
-## Post installation
-When installation is finished please load variables into system
-```
-source $HOME/.bash_profile
-```
+
 ### Public key
 
 All the public key information you need is in the '~/$WORKSPACE/keys/public-keys.yaml' file.
