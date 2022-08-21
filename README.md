@@ -116,7 +116,7 @@ aptos genesis generate-layout-template --output-file ~/$WORKSPACE/layout.yaml
 ```
 
 ### Replace your user name with the one you set before.
-
+```
 root_key: "D04470F43AB6AEAA4EB616B72128881EEF77346F2075FFE68E14BA7DEBD8095E"
 users: ["username you specified from previous step"]
 chain_id: 43
@@ -131,7 +131,7 @@ required_proposer_stake: 100000000000000
 rewards_apy_percentage: 10
 voting_duration_secs: 43200
 voting_power_increase_limit: 20
-
+```
 > **Please make sure you use the same root public key as shown in the example and same chain ID, those config will be used during registration to verify your node.**
 
 ### Download Aptos Framework
