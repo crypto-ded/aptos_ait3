@@ -8,22 +8,30 @@ Recommended to install fullnode on a separate server
 ### 1. Update packages
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install build-essential pkg-config openssl libssl-dev libclang-dev -y
+```
+### 2. Install dependencies
+```
+sudo apt-get install jq unzip -y
 ```
 
-### 2. Install docker
+### 3. Install docker
 ```
-. <(wget -qO- https://raw.githubusercontent.com/letsnode/Utils/main/installers/docker.sh)
-```
-
-### 3. Install docker compose
-```
-docker_compose_version=$(wget -qO- https://api.github.com/repos/docker/compose/releases/latest | jq -r ".tag_name")
-sudo wget -O /usr/bin/docker-compose "https://github.com/docker/compose/releases/download/${docker_compose_version}/docker-compose-`uname -s`-`uname -m`"
-sudo chmod +x /usr/bin/docker-compose
+sudo apt-get install ca-certificates curl gnupg lsb-release wget -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 ```
 
-### 4. Install fullnode node
+### 4. Install docker compose
+```
+mkdir -p ~/.docker/cli-plugins/
+curl -SL https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+chmod +x ~/.docker/cli-plugins/docker-compose
+sudo chown $USER /var/run/docker.sock
+```
+
+### 5. Install fullnode node
 #### Create directory
 ```
 mkdir ~/testnet && cd ~/testnet
@@ -51,7 +59,7 @@ Press `Ctrl + X` then press `Y` and `Enter` to save changes to file
 
 ### Run docker compose
 ```
-docker-compose up -d
+docker compose up
 ```
 
 ## 5. Connect to your validator node and update your validator config
