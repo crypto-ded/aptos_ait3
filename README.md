@@ -72,10 +72,6 @@ cd ~/$WORKSPACE
 
 ### 7. Install Validator node
 
-### Create directory
-```
-mkdir ~/$WORKSPACE && cd ~/$WORKSPACE
-```
 
 ### Download config files
 ```
