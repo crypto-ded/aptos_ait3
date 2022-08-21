@@ -29,36 +29,25 @@ sudo apt-get install jq unzip -y
 ### 3. Install docker
 ```
 sudo apt-get install ca-certificates curl gnupg lsb-release wget -y
-
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) 
-stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 ```
 
 ### 4. Install docker compose
 ```
 mkdir -p ~/.docker/cli-plugins/
-
 curl -SL https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
-
 chmod +x ~/.docker/cli-plugins/docker-compose
-
 sudo chown $USER /var/run/docker.sock
 ```
 
 ### 5. Download Aptos CLI
 ```
 wget -qO aptos-cli.zip https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v0.3.1/aptos-cli-0.3.1-Ubuntu-x86_64.zip
-
 unzip aptos-cli.zip -d /usr/local/bin
-
 chmod +x /usr/local/bin/aptos
-
 rm aptos-cli.zip
 ```
 
