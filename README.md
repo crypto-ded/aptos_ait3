@@ -110,6 +110,11 @@ Layout template file defines the node in the Aptos validatorSet.
 ```
 aptos genesis generate-layout-template --output-file ~/$WORKSPACE/layout.yaml
 ```
+### Modify `layout.yaml`, add `root_key`, validator name and `chain_id`:
+```
+sudo nano layout.yaml
+```
+
 
 ### Replace your user name with the one you set before.
 ```
