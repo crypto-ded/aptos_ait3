@@ -152,7 +152,7 @@ docker compose up
 
 ### Public key
 
-All the public key information you need is in the '~/$WORKSPACE/keys/public-keys.yaml' file.
+All the public key information you need is in the '~/root/testnet/keys/public-keys.yaml' file.
 ```
 cat /root/testnet/keys/public-keys.yaml
 ```
