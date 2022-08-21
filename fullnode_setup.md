@@ -2,7 +2,7 @@
 Recommended to install fullnode on a separate server
 ## For running an fullnode i recommend the following:
 
-- CPU: 4 cores (Intel Xeon Skylake or newer)
+- CPU: 4 cores 
 - Memory: 8GB RAM
 
 ### 1. Update packages
@@ -44,7 +44,7 @@ wget -qO docker-compose.yaml https://raw.githubusercontent.com/aptos-labs/aptos-
 wget -qO fullnode.yaml https://raw.githubusercontent.com/aptos-labs/aptos-core/main/docker/compose/aptos-node/fullnode.yaml
 ```
 
-### Edit `fullnode.yaml` file to update the IP address for Validator node
+#### Edit `fullnode.yaml` file to update the IP address for Validator node
 Open `fullnode.yaml` file in nano editor
 ```
 nano fullnode.yaml
@@ -52,9 +52,10 @@ nano fullnode.yaml
 
 Change `<Validator IP Address>` to your validator IP
 ![image](https://user-images.githubusercontent.com/95987354/185751546-2dea9366-b901-4206-8f42-846a975fc653.png)
-Press `Ctrl + X` then press `Y` and `Enter` to save changes to file
+Press `Ctrl + O` then press `Ctrl + X` and `Enter` to save changes to file
 
-### Copy the `validator-full-node-identity.yaml`, `genesis.blob` and `waypoint.txt` files from validator node into the same working directory on Fullnode machine
+#### Copy the `validator-full-node-identity.yaml`, `genesis.blob` and `waypoint.txt` files from validator node into the same working directory on Fullnode machine
+![image](https://user-images.githubusercontent.com/95987354/185796510-c12f53fa-468a-4bc1-8900-2c2e5f90a513.png)
 
 
 ### Run docker compose
@@ -62,23 +63,7 @@ Press `Ctrl + X` then press `Y` and `Enter` to save changes to file
 docker compose up
 ```
 
-## 5. Connect to your validator node and update your validator config
-Change `<YOUR_FULLNODE_IP>` to you fullnode public ip
-```
-aptos genesis set-validator-configuration \
-    --keys-dir ~/$WORKSPACE --local-repository-dir ~/$WORKSPACE \
-    --username $NODENAME \
-    --validator-host $PUBLIC_IP:6180 \
-    --full-node-host <YOUR_FULLNODE_IP>:6182
-```
-
-Restart docker compose
-```
-cd ~/$WORKSPACE
-docker-compose restart
-```
-
-### Useful commands
+## Useful commands
 ### Check fullnode node logs
 ```
 docker logs -f testnet-fullnode-1 --tail 50
